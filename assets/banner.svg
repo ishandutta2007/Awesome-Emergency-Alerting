@@ -18,19 +18,20 @@
     </linearGradient>
 
     <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feGaussianBlur stdDeviation="6" result="blur"/>
       <feComposite in="SourceGraphic" in2="blur" operator="over"/>
     </filter>
 
     <style>
-      .title { font-family: system-ui, -apple-system, sans-serif; font-weight: 900; font-size: 54px; fill: url(#title-grad); }
-      .subtitle { font-family: system-ui, -apple-system, sans-serif; font-weight: 600; font-size: 22px; fill: #e2e8f0; letter-spacing: 1px; }
-      .tagline { font-family: system-ui, -apple-system, sans-serif; font-weight: 400; font-size: 15px; fill: #94a3b8; }
-      .badge-text { font-family: system-ui, -apple-system, sans-serif; font-weight: 700; font-size: 13px; fill: #ffffff; }
+      .title { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 900; font-size: 50px; fill: url(#title-grad); }
+      .subtitle { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 22px; fill: #e2e8f0; letter-spacing: 1px; }
+      .tagline { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-size: 15px; fill: #94a3b8; }
+      .badge-text { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 700; font-size: 13px; fill: #fda4af; }
+      .chip-text { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 12px; fill: #cbd5e1; }
       
       @keyframes pulseRing {
         0% { transform: scale(0.95); opacity: 0.8; }
-        50% { transform: scale(1.15); opacity: 0.3; }
+        50% { transform: scale(1.12); opacity: 0.3; }
         100% { transform: scale(0.95); opacity: 0.8; }
       }
 
@@ -41,11 +42,11 @@
 
       @keyframes floatParticle {
         0% { transform: translateY(0px); opacity: 0.3; }
-        50% { transform: translateY(-15px); opacity: 0.8; }
+        50% { transform: translateY(-12px); opacity: 0.8; }
         100% { transform: translateY(0px); opacity: 0.3; }
       }
 
-      .animated-pulse { animation: pulseRing 4s ease-in-out infinite; transform-origin: 120px 150px; }
+      .animated-pulse { animation: pulseRing 4s ease-in-out infinite; transform-origin: 100px 150px; }
       .animated-wave { stroke-dasharray: 600; stroke-dashoffset: 600; animation: signalWave 6s linear infinite; }
       .particle-1 { animation: floatParticle 3s ease-in-out infinite; }
       .particle-2 { animation: floatParticle 4s ease-in-out infinite 1s; }
@@ -56,13 +57,13 @@
   <!-- Background -->
   <rect width="1200" height="300" rx="16" fill="url(#bg-grad)"/>
 
-  <!-- Background Grid & Dynamic Alert Waves (positioned in background behind text) -->
+  <!-- Background Grid -->
   <g opacity="0.12">
     <path d="M 0,50 L 1200,50 M 0,100 L 1200,100 M 0,150 L 1200,150 M 0,200 L 1200,200 M 0,250 L 1200,250" stroke="#ffffff" stroke-width="1"/>
     <path d="M 200,0 L 200,300 M 400,0 L 400,300 M 600,0 L 600,300 M 800,0 L 800,300 M 1000,0 L 1000,300" stroke="#ffffff" stroke-width="1"/>
   </g>
 
-  <!-- Dynamic Signal Wave Animation in Background -->
+  <!-- Dynamic Signal Wave Animation -->
   <path class="animated-wave" d="M 50,230 Q 200,120 350,220 T 650,210 T 950,240 T 1150,180" fill="none" stroke="#ef4444" stroke-width="3" opacity="0.4"/>
   <path class="animated-wave" d="M 50,240 Q 250,280 450,180 T 750,230 T 1050,190 T 1150,220" fill="none" stroke="#f59e0b" stroke-width="2" opacity="0.3"/>
 
@@ -74,22 +75,22 @@
     <path d="M 100,125 C 88,125 80,134 80,146 L 80,158 L 73,165 L 73,170 L 127,170 L 127,165 L 120,158 L 120,146 C 120,134 112,125 100,125 Z M 93,175 C 93,179 96,182 100,182 C 104,182 107,179 107,175 Z" fill="#f43f5e"/>
   </g>
 
-  <!-- Floating Ambient Particles (Background Layer) -->
+  <!-- Floating Ambient Particles -->
   <circle class="particle-1" cx="300" cy="70" r="4" fill="#ef4444"/>
   <circle class="particle-2" cx="950" cy="80" r="5" fill="#f59e0b"/>
   <circle class="particle-3" cx="1050" cy="220" r="3" fill="#3b82f6"/>
 
-  <!-- Main Content Foreground (High Contrast & Clear Title/Subtitle) -->
+  <!-- Main Content Foreground -->
   <g transform="translate(240, 0)">
     <!-- Category Pill -->
-    <rect x="0" y="48" width="280" height="28" rx="14" fill="#331832" stroke="#f43f5e" stroke-width="1.5"/>
-    <text x="14" y="67" class="badge-text" fill="#fda4af">🚨 EMERGENCY ALERTING ECOSYSTEM</text>
+    <rect x="0" y="48" width="310" height="28" rx="14" fill="#331832" stroke="#f43f5e" stroke-width="1.5"/>
+    <text x="14" y="67" class="badge-text">&#x1F6A8; EMERGENCY ALERTING ECOSYSTEM</text>
 
     <!-- Main Title -->
     <text x="0" y="125" class="title" filter="url(#glow)">Awesome Emergency Alerting</text>
 
     <!-- Subtitle -->
-    <text x="0" y="165" class="subtitle">Mass Notification, Crisis Comm & Public Warning Systems</text>
+    <text x="0" y="165" class="subtitle">Mass Notification, Crisis Comm &amp; Public Warning Systems</text>
 
     <!-- Tagline -->
     <text x="0" y="200" class="tagline">Curated Directory of Top SaaS Platforms &amp; Open-Source GitHub Projects</text>
@@ -97,16 +98,16 @@
     <!-- Feature Tags -->
     <g transform="translate(0, 225)">
       <rect x="0" y="0" width="130" height="26" rx="6" fill="#1e293b" stroke="#475569"/>
-      <text x="12" y="17" font-family="sans-serif" font-size="12" fill="#cbd5e1" font-weight="600">📡 CAP / EAS</text>
+      <text x="12" y="17" class="chip-text">&#x1F4E1; CAP / EAS</text>
 
       <rect x="142" y="0" width="140" height="26" rx="6" fill="#1e293b" stroke="#475569"/>
-      <text x="154" y="17" font-family="sans-serif" font-size="12" fill="#cbd5e1" font-weight="600">📲 Multi-Channel</text>
+      <text x="154" y="17" class="chip-text">&#x1F4F2; Multi-Channel</text>
 
-      <rect x="294" y="0" width="140" height="26" rx="6" fill="#1e293b" stroke="#475569"/>
-      <text x="306" y="17" font-family="sans-serif" font-size="12" fill="#cbd5e1" font-weight="600">⚡ Incident Response</text>
+      <rect x="294" y="0" width="150" height="26" rx="6" fill="#1e293b" stroke="#475569"/>
+      <text x="306" y="17" class="chip-text">&#x26A1; Incident Response</text>
 
-      <rect x="446" y="0" width="130" height="26" rx="6" fill="#1e293b" stroke="#475569"/>
-      <text x="458" y="17" font-family="sans-serif" font-size="12" fill="#cbd5e1" font-weight="600">💻 Open Source</text>
+      <rect x="456" y="0" width="130" height="26" rx="6" fill="#1e293b" stroke="#475569"/>
+      <text x="468" y="17" class="chip-text">&#x1F4BB; Open Source</text>
     </g>
   </g>
 </svg>
