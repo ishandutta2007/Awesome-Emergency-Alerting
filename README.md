@@ -55,7 +55,7 @@
 
 ## 💻 Open-Source GitHub Projects
 
-*Self-hosted open-source software, alert gateways, dispatch engines, and notification protocols sorted by GitHub Stars_Count.*
+*Self-hosted open-source software, alert gateways, dispatch engines, and notification protocols sorted by GitHub_Stars_Count.*
 
 - **[Novu](https://github.com/novuhq/novu)**  
   [![GitHub_Stars](https://img.shields.io/github/stars/novuhq/novu?style=social&color=white)](https://github.com/novuhq/novu/stargazers)  
