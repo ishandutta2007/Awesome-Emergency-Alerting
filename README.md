@@ -55,43 +55,43 @@
 
 ## 💻 Open-Source GitHub Projects
 
-*Self-hosted open-source software, alert gateways, dispatch engines, and notification protocols sorted by GitHub Star count.*
+*Self-hosted open-source software, alert gateways, dispatch engines, and notification protocols sorted by GitHub Stars_Count.*
 
 - **[Novu](https://github.com/novuhq/novu)**  
-  [![GitHub stars](https://img.shields.io/github/stars/novuhq/novu?style=social&color=white)](https://github.com/novuhq/novu/stargazers)  
+  [![GitHub_Stars](https://img.shields.io/github/stars/novuhq/novu?style=social&color=white)](https://github.com/novuhq/novu/stargazers)  
   🚀 Open-source notification infrastructure engine. Enables multi-channel emergency notifications across SMS (Twilio, Vonage), Email, Push, Slack, and In-App with advanced workflow execution, digests, and multi-tenant routing. **TypeScript / NestJS stack**.
 
 - **[ntfy](https://github.com/binwiederhier/ntfy)**  
-  [![GitHub stars](https://img.shields.io/github/stars/binwiederhier/ntfy?style=social&color=white)](https://github.com/binwiederhier/ntfy/stargazers)  
+  [![GitHub_Stars](https://img.shields.io/github/stars/binwiederhier/ntfy?style=social&color=white)](https://github.com/binwiederhier/ntfy/stargazers)  
   🔔 HTTP-based pub-sub push notification service. Send instant alerts to phones or desktops via simple PUT/POST HTTP requests. Features iOS/Android push relay, UnifiedPush integration, and zero-dependency self-hosting. **Go stack**.
 
 - **[Gotify](https://github.com/gotify/server)**  
-  [![GitHub stars](https://github.com/gotify/server/stargazers)](https://github.com/gotify/server/stargazers)  
-  [![GitHub stars](https://img.shields.io/github/stars/gotify/server?style=social&color=white)](https://github.com/gotify/server/stargazers)  
+  [![GitHub_Stars](https://github.com/gotify/server/stargazers)](https://github.com/gotify/server/stargazers)  
+  [![GitHub_Stars](https://img.shields.io/github/stars/gotify/server?style=social&color=white)](https://github.com/gotify/server/stargazers)  
   📲 Self-hosted WebSocket push notification server for sending and receiving emergency messages in real-time with priority filters and native Android client app support. **Go stack**.
 
 - **[Apprise](https://github.com/caronc/apprise)**  
-  [![GitHub stars](https://img.shields.io/github/stars/caronc/apprise?style=social&color=white)](https://github.com/caronc/apprise/stargazers)  
+  [![GitHub_Stars](https://img.shields.io/github/stars/caronc/apprise?style=social&color=white)](https://github.com/caronc/apprise/stargazers)  
   📣 Universal push notification library. Send emergency alerts to over 100+ notification services (Telegram, Signal, Discord, SMS, Email, VoIP, Pushover) using a single unified syntax. **Python stack**.
 
 - **[Resgrid Core](https://github.com/Resgrid/Core)**  
-  [![GitHub stars](https://img.shields.io/github/stars/Resgrid/Core?style=social&color=white)](https://github.com/Resgrid/Core/stargazers)  
+  [![GitHub_Stars](https://img.shields.io/github/stars/Resgrid/Core?style=social&color=white)](https://github.com/Resgrid/Core/stargazers)  
   🚒 Complete open-source emergency management & Computer Aided Dispatch (CAD) platform. Features automated dispatching, unit tracking (AVL), duty shifts, responder messaging, and multi-channel emergency notification. **C# / .NET Core stack**.
 
 - **[FOSS Warn](https://github.com/nucleus-ffm/foss_warn)**  
-  [![GitHub stars](https://img.shields.io/github/stars/nucleus-ffm/foss_warn?style=social&color=white)](https://github.com/nucleus-ffm/foss_warn/stargazers)  
+  [![GitHub_Stars](https://img.shields.io/github/stars/nucleus-ffm/foss_warn?style=social&color=white)](https://github.com/nucleus-ffm/foss_warn/stargazers)  
   ⚡ Open-source government disaster & weather warning app. Ingests Common Alerting Protocol (CAP) feeds from Germany (NINA/BIWAPP) and international KDE disaster alerts via UnifiedPush. **C++ / Qt / KDE stack**.
 
 - **[OpsKnight](https://github.com/opsknight-labs/OpsKnight)**  
-  [![GitHub stars](https://img.shields.io/github/stars/opsknight-labs/OpsKnight?style=social&color=white)](https://github.com/opsknight-labs/OpsKnight/stargazers)  
+  [![GitHub_Stars](https://img.shields.io/github/stars/opsknight-labs/OpsKnight?style=social&color=white)](https://github.com/opsknight-labs/OpsKnight/stargazers)  
   🛡️ Incident management, on-call escalation, and status page platform. Connects monitoring alerts directly to incident responder call/SMS rotas. **TypeScript / Next.js stack**.
 
 - **[Brgy.Tanod-S.O.S](https://github.com/MiB1968/Brgy.Tanod-S.O.S)**  
-  [![GitHub stars](https://img.shields.io/github/stars/MiB1968/Brgy.Tanod-S.O.S?style=social&color=white)](https://github.com/MiB1968/Brgy.Tanod-S.O.S/stargazers)  
+  [![GitHub_Stars](https://img.shields.io/github/stars/MiB1968/Brgy.Tanod-S.O.S?style=social&color=white)](https://github.com/MiB1968/Brgy.Tanod-S.O.S/stargazers)  
   🆘 Offline-first PWA emergency SOS alert system with live location heatmaps, offline queued sync, SMS fallback, and local WebLLM voice-activated AI Guardian mode. **React / Firebase stack**.
 
 - **[SteeperMold Emergency Notification System](https://github.com/SteeperMold/Emergency-Notification-System)**  
-  [![GitHub stars](https://img.shields.io/github/stars/SteeperMold/Emergency-Notification-System?style=social&color=white)](https://github.com/SteeperMold/Emergency-Notification-System/stargazers)  
+  [![GitHub_Stars](https://img.shields.io/github/stars/SteeperMold/Emergency-Notification-System?style=social&color=white)](https://github.com/SteeperMold/Emergency-Notification-System/stargazers)  
   ⚡ Scalable SMS notification system engineered for **million-recipient scale**. Microservices architecture utilizing Kafka queues, Go API, Twilio delivery callbacks, and Grafana telemetry. **Go / React / Kafka stack**.
 
 - **[EAS Station](https://hub.docker.com/r/kr8mer/eas-station)**  
@@ -99,15 +99,15 @@
   📻 Broadcast Emergency Alert System (EAS) software stack. Processes CAP (Common Alerting Protocol) feeds from NOAA/IPAWS, generates SAME audio header tones, and relays alerts to radio/GPIO/LED gateways. **Docker Compose stack**.
 
 - **[mowas-pwb](https://github.com/joergschultzelutter/mowas-pwb)**  
-  [![GitHub stars](https://img.shields.io/github/stars/joergschultzelutter/mowas-pwb?style=social&color=white)](https://github.com/joergschultzelutter/mowas-pwb/stargazers)  
+  [![GitHub_Stars](https://img.shields.io/github/stars/joergschultzelutter/mowas-pwb?style=social&color=white)](https://github.com/joergschultzelutter/mowas-pwb/stargazers)  
   📡 Modular Warning System (MoWaS) Personal Warning Beacon. Parses German emergency broadcasts, monitors lat/lon & APRS locations, and auto-translates warning texts via LLMs. **Python / Raspberry Pi stack**.
 
 - **[Emergency Notification System](https://github.com/inwall-ch/emergency-notification-system)**  
-  [![GitHub stars](https://img.shields.io/github/stars/inwall-ch/emergency-notification-system?style=social&color=white)](https://github.com/inwall-ch/emergency-notification-system/stargazers)  
+  [![GitHub_Stars](https://img.shields.io/github/stars/inwall-ch/emergency-notification-system?style=social&color=white)](https://github.com/inwall-ch/emergency-notification-system/stargazers)  
   ✉️ Lightweight emergency alert portal for uploading CSV contacts, managing message templates, and triggering immediate multi-channel SMS/Email/Telegram alerts. **PHP / Laravel stack**.
 
 - **[Scribe Hospital Crisis System](https://github.com/nocomp/scribe)**  
-  [![GitHub stars](https://img.shields.io/github/stars/nocomp/scribe?style=social&color=white)](https://github.com/nocomp/scribe/stargazers)  
+  [![GitHub_Stars](https://img.shields.io/github/stars/nocomp/scribe?style=social&color=white)](https://github.com/nocomp/scribe/stargazers)  
   🏥 Decentralized, privacy-compliant hospital crisis management system. Manages multi-facility incident escalation, ambulance routing, and bed capacity tracking offline. **FastAPI / Python stack**.
 
 ---
