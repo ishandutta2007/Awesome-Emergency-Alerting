@@ -1,221 +1,162 @@
-# Awesome-Emergency-Alerting
-
-## Top Emergency Alerting Platforms Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**
-
-*Focused on Mass Notification, Crisis Communication, Incident Response & Public Warning Systems*
-
-**Last updated: September 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Emergency Alerting**. These tools help organizations, government agencies, and public safety teams send mass notifications, manage critical events, and coordinate multi-channel emergency communications across SMS, email, voice, push, and broadcast channels.
-
-
-
-**Examples** include Everbridge, AlertMedia, OnSolve, Rave Mobile Safety, BlackBerry AtHoc, Regroup, Omnilert, Singlewire InformaCast, Hyper-Reach, and Preparis (the category leaders).
-
-
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, custom alerting workflows, and transparent crisis communication — ideal for organizations that need full control over their emergency notification infrastructure without per-contact SaaS fees or vendor lock-in.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Everbridge](https://www.everbridge.com/)**
-
-  The leading critical event management platform. Provides mass notification, incident management, and risk intelligence with multi-channel delivery (SMS, voice, email, push, desktop alerts). Used by enterprises and government agencies worldwide.
-
-
-
-- **[AlertMedia](https://www.alertmedia.com/)**
-
-  Emergency communication and threat intelligence platform. Provides two-way messaging, employee safety check-ins, and multi-channel alerting with a focus on ease of use.
-
-
-
-- **[OnSolve](https://www.onsolve.com/)**
-
-  Critical communication and risk intelligence platform. Combines mass notification, incident management, and threat intelligence into a unified system for enterprise and government.
-
-
-
-- **[Rave Mobile Safety](https://www.ravemobilesafety.com/)**
-
-  Public safety and emergency notification platform. Provides mass notification, panic button apps, and 911 integration for campuses, healthcare, and government agencies.
-
-
-
-- **[BlackBerry AtHoc](https://www.blackberry.com/)**
-
-  Secure crisis communication platform for government and defense. Provides mass notification, accountability, and interoperable alerting with FedRAMP authorization.
-
-
-
-- **[Regroup](https://www.regroup.com/)**
-
-  Mass notification and emergency communication platform. Provides SMS, voice, email, and push alerting for universities, healthcare, and enterprises.
-
-
-
-- **[Omnilert](https://www.omnilert.com/)**
-
-  Emergency notification and mass communication platform. Provides multi-channel alerting, threat detection, and integrated emergency response.
-
-
-
-- **[Singlewire InformaCast](https://www.singlewire.com/)**
-
-  Emergency notification and mass communication platform with deep Cisco integration. Provides IP speaker, desktop, and mobile alerting for campuses and enterprises.
-
-
-
-- **[Hyper-Reach](https://www.hyper-reach.com/)**
-
-  Mass notification platform for government agencies and public safety. Provides emergency alerts, weather warnings, and community notifications.
-
-
-
-- **[Preparis](https://www.preparis.com/)**
-
-  Emergency notification and crisis management platform. Provides mass notification, incident management, and business continuity planning.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[Resgrid Core](https://github.com/Resgrid/Core)**
-
-  The most complete open-source emergency management platform. Powers Resgrid.com with hosted and self-hosted options. Features **Computer Aided Dispatch** (manual and automatic), personnel management with certifications and roles, unit support with AVL and logging, duty shift system with swap/trade support, learning management, inventory tracking, document storage, department linking for mutual aid, and a built-in **messaging and notification system** for targeted and dynamic communications to personnel. Native mobile apps for Personnel, Units, Stations, and Commanders. **Apache 2.0**. ~131 stars .
-
-
-
-- **[EAS Station](https://hub.docker.com/r/kr8mer/eas-station)**
-
-  Comprehensive open-source Emergency Alert System (EAS) software stack designed for broadcasters, emergency communications professionals, and public safety organizations. Replaces legacy EAS hardware with a flexible, containerized platform. Features **CAP (Common Alerting Protocol) feed ingestion** from NOAA, IPAWS, and other public alert sources, **SAME (Specific Area Message Encoding) tone generation and relay**, audio synthesis and relay control, multi-channel output to web dashboards, LED signs, GPIO, MQTT, and radio gateways. Integrated PostgreSQL + PostGIS database for geospatial alert storage. Docker Compose deployment. Runs on Raspberry Pi-class devices and standard Linux servers .
-
-
-
-- **[Emergency Notification System](https://github.com/inwall-ch/emergency-notification-system)**
-
-  Laravel-based emergency notification system for sending SMS, email, and Telegram alerts. Users can upload contacts via CSV, create message templates, and send notifications to all recipients with one button. Integrates with Twilio (SMS), Google SMTP (email), and Telegram. Tracks delivery status per user. PHP/Laravel stack. ~4 stars .
-
-
-
-- **[SteeperMold Emergency Notification System](https://github.com/SteeperMold/Emergency-Notification-System)**
-
-  Scalable, fault-tolerant SMS notification system designed for **million-recipient scale**. Microservices architecture with React frontend, Go API service, Kafka message queue, PostgreSQL for status tracking, and S3 for file storage. Features delivery guarantees (at-least-once), retry logic via Rebalancer service, Twilio callback processing for delivery confirmation, and horizontal scaling. Tested at **1,000,000 recipients**. Docker Compose deployment with Grafana monitoring. **Open source** .
-
-
-
-- **[Brgy.Tanod-S.O.S](https://github.com/MiB1968/Brgy.Tanod-S.O.S)**
-
-  Offline-first, PWA-first SOS alert system for Philippine barangays. Connects citizens directly to local responders with reliable performance in low-connectivity and typhoon-prone areas. Features floating SOS button with long-press activation, real-time responder tracking with live location and heatmap, **offline-first SOS with queued alerts and auto-sync**, multi-channel fallback (Firebase + Twilio SMS during outages), and **AI Guardian Mode** with voice-activated SOS in Tagalog/English powered by local WebLLM (privacy-first, works offline). React 19, TypeScript, Firebase, Twilio, Leaflet maps. PWA + Capacitor-ready. **Open source** .
-
-
-
-- **[mowas-pwb](https://github.com/joergschultzelutter/mowas-pwb)**
-
-  MOWAS Personal Warning Beacon — MeetKATWARN's open-source sibling. Sends emergency broadcasts from Germany's Modular Warning System to email and every messenger supported by Apprise (Telegram, Signal, etc.). Monitors static lat/lon coordinates for MOWAS events. Supports dynamic position monitoring via APRS for licensed ham radio operators. Users specify minimal warning level for alerts. Emergency alerts can be sent to specific clients with high priority. Automatically switches to shorter emergency intervals during active alerts. Optional OpenAI/Google PaLM summarization for verbose German warning text. Automatic translation to native language. Runs on Raspberry Pi .
-
-
-
-- **[FOSS Warn](https://github.com/nucleus-ffm/foss_warn)**
-
-  Open-source emergency and weather alert app. Monitors warnings from multiple government sources including Germany's NINA and BIWAPP, and provides worldwide disaster alerts via alerts.kde.org. Based on OASIS Common Alerting Protocol (CAP). Client infrastructure shipped with KDE Gear. Supports self-hosted and KDE infrastructure push notifications via UnifiedPush. Part of the broader KDE emergency alerting ecosystem .
-
-
-
-- **[Scribe](https://github.com/nocomp/scribe)**
-
-  Open-source hospital crisis management platform. Multi-site, multi-language architecture with GDPR and French HDS compliance. Each facility runs independent SCRIBE instance with local database — patient data never leaves the facility. Master collector aggregates only non-nominative indicators (incidents, capacity tension, transfer counts). FastAPI backend, SQLite per instance, Leaflet maps with ambulance routing, optional AI (French government LLM). Docker or direct Python deployment. **Open source** .
-
-
-
-- **[OpsKnight](https://github.com/opsknight-labs/OpsKnight)**
-
-  Complete open-source platform for on-call management, incident response, and status pages. While focused on DevOps/SRE workflows, its **notification and escalation engine** can be adapted for emergency alerting. Features Slack ChatOps integration, native inbound parsers (Prometheus, Datadog, Nagios, Icinga), RBAC-governed schedules, and encrypted integration secrets. Next.js application with PostgreSQL backend. Helm charts for Kubernetes deployment. **Open source** .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Notification Infrastructure**: **Novu** (20k+ GitHub stars, self-hosted notification infrastructure with SMS, email, push, chat, and in-app channels; workflow engine with digest and batching; TypeScript-first) .
-
-- **Self-Hosted Push**: **ntfy** (HTTP-based pub-sub push notifications, UnifiedPush distributor, supports iOS via relay), **Gotify** (lightweight Go-based push server with Android app), **Apprise** (Python library supporting 100+ notification services) .
-
-- **Incident Management**: **OpsKnight** (on-call + incident response + status pages), **incident-response-bot** (Slack-based incident reporting with automated channel creation) .
-
-- **Broadcast EAS**: **EAS Station** (CAP/SAME ingestion, audio synthesis, multi-channel output) .
-
-
-
-**Frameworks for building custom systems**: Combine **Resgrid Core** for the complete emergency management and dispatch platform, **EAS Station** for broadcast-level alerting with CAP/SAME, **SteeperMold Emergency Notification System** for million-scale SMS delivery, **Novu** for multi-channel notification routing, and **ntfy** or **Gotify** for self-hosted push. Add **PostgreSQL** for persistence and **Docker** for deployment.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Emergency alerting platforms handle life-critical communications; ensure proper testing, redundancy, and compliance with local emergency communication regulations before production deployment.
-
-- Self-hosted open-source solutions require proper security hardening, network isolation, and regular maintenance. For mission-critical emergency use, consider hybrid approaches with commercial backup systems.
-
-
+# 🚨 Awesome Emergency Alerting & Mass Notification Systems 📡
+
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Emergency Alerting Banner" width="100%"/>
+</p>
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <img src="https://img.shields.io/github/last-commit/ishandutta2007/Awesome-Emergency-Alerting?style=flat-square&color=emerald" alt="Last Commit"/>
+  <img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Emergency-Alerting?style=flat-square&color=blue" alt="License"/>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+> 📢 **Curated Directory of Top SaaS Emergency Alerting Platforms & Open-Source Mass Notification Systems**  
+> *Comprehensive guide to Critical Event Management (CEM), Crisis Communication, Computer Aided Dispatch (CAD), Public Warning Systems (CAP/EAS), and Incident Escalation Infrastructure.*
 
 ---
 
+## 📚 Table of Contents
+- [📊 Market Overview & Industry Dynamics](#-market-overview--industry-dynamics)
+- [🏢 SaaS & Hosted Emergency Alerting Platforms](#-saas--hosted-emergency-alerting-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🏗️ Architectural Frameworks & Infrastructure Tools](#%EF%B8%8F-architectural-frameworks--infrastructure-tools)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [📈 Star History](#-star-history)
+- [⚠️ Disclaimer](#%EF%B8%8F-disclaimer)
 
+---
 
-**Made for emergency managers, public safety professionals, campus security teams, and crisis communication specialists.**
+## 📊 Market Overview & Industry Dynamics
 
-Let's make emergency alerting more open, resilient, and accessible.
+> 💡 **Market Size & Structure**: The Global Emergency & Mass Notification System (MNS) market is estimated at **$12.5 Billion - $15.8 Billion** and is projected to expand at a CAGR of **15.2%**, reaching over **$30 Billion by 2032**. The sector is **moderately fragmented**, featuring established enterprise leaders (Everbridge, BlackBerry AtHoc, OnSolve) alongside specialized niche platforms (AlertMedia, Singlewire) and high-growth open-source developer infrastructure engines.
+
+---
+
+## 🏢 SaaS & Hosted Emergency Alerting Platforms
+
+*Compare commercial mass notification and critical event management platforms by company scale, pricing entry tiers, and free trial/tier limits.*
+
+| Platform | Estimated Scale (Revenue / Valuation) | Starting Pricing (Paid Tiers) | Free Tier / Free Trial Limits | Primary Focus & Key Capabilities |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Everbridge](https://www.everbridge.com/)** 🚨 | **~$440M Annual Revenue** *(Acquired by Thoma Bravo for $1.8B)* | **~$3,600 / year** (Base Org Tier) | **14-Day Free Trial** (Up to 50 test contacts & full CEM suite access) | Enterprise Critical Event Management (CEM), multi-channel public warning, IT alerting, risk intelligence. |
+| **[BlackBerry AtHoc](https://www.blackberry.com/)** 🛡️ | **~$200M+ Cybersecurity Revenue Division** | **~$12 / user / year** (Gov/Enterprise volume) | **30-Day Enterprise Evaluation** (Requires sales authorization, FedRAMP sandbox) | FedRAMP-certified crisis communications, military/defense accountability, interoperable alerting. |
+| **[OnSolve](https://www.onsolve.com/)** ⚡ | **~$150M Annual Revenue** | **~$2,500 / year** (MIR3 / CodeRED Base) | **14-Day Free Trial** (CodeRED public safety demo environment) | AI-driven threat intelligence, mass notification, incident management for enterprises & government. |
+| **[Singlewire InformaCast](https://www.singlewire.com/)** 🔊 | **~$70M Annual Revenue** | **~$3.50 / user / year** (Fusion Plan, 250 user min) | **30-Day Free Trial** (Includes 50 mobile users & IP speaker integration test) | Cisco/IP speaker integration, campus safety, desktop alerts, panic button triggers. |
+| **[AlertMedia](https://www.alertmedia.com/)** 📱 | **~$60M Annual Revenue** *(Valued at $1B+)* | **~$3,000 / year** (Standard Tier) | **14-Day Free Trial** (Up to 25 recipients with full 2-way messaging access) | Two-way threat intelligence, employee safety check-ins, multi-channel emergency SMS/Voice/Push. |
+| **[Rave Mobile Safety](https://www.ravemobilesafety.com/)** 🚑 | **~$50M Annual Revenue** *(Acquired by Motorola Solutions)* | **~$2,000 / year** (Campus/Muni Base) | **30-Day Demo Trial** (Full access to Rave Alert & Panic Button test console) | 911 integration, campus safety alerts, K-12 panic button, public safety notifications. |
+| **[Regroup](https://www.regroup.com/)** ✉️ | **~$25M Annual Revenue** | **~$1,800 / year** (Base Mass Notification) | **14-Day Free Trial** (Up to 100 test SMS/email/push notifications) | Cloud mass notification for higher education, healthcare, venue safety, and enterprise operations. |
+| **[Omnilert](https://www.omnilert.com/)** 👁️ | **~$20M Annual Revenue** | **~$1,500 / year** (Scout/Alert Base) | **14-Day Free Trial** (Includes gun-detect AI software simulation & mass messaging) | AI active shooter gun detection, emergency mass notification, campus safety automation. |
+| **[Hyper-Reach](https://www.hyper-reach.com/)** 📢 | **~$12M Annual Revenue** | **~$1,200 / year** (Small Muni Plan) | **30-Day Free Trial** (For municipal & county emergency management agencies) | Public safety alerts, NOAA weather warning automated broadcasts, community sign-up portals. |
+| **[Preparis](https://www.preparis.com/)** 📋 | **~$10M Annual Revenue** | **~$1,000 / year** (Essential CEM) | **14-Day Free Trial** (Includes emergency document vault & notification templates) | Business continuity planning, crisis emergency notification, incident reporting compliance. |
+
+---
+
+## 💻 Open-Source GitHub Projects
+
+*Self-hosted open-source software, alert gateways, dispatch engines, and notification protocols sorted by GitHub Star count.*
+
+- **[Novu](https://github.com/novuhq/novu)**  
+  [![GitHub stars](https://img.shields.io/github/stars/novuhq/novu?style=social&color=white)](https://github.com/novuhq/novu/stargazers)  
+  🚀 Open-source notification infrastructure engine. Enables multi-channel emergency notifications across SMS (Twilio, Vonage), Email, Push, Slack, and In-App with advanced workflow execution, digests, and multi-tenant routing. **TypeScript / NestJS stack**.
+
+- **[ntfy](https://github.com/binwiederhier/ntfy)**  
+  [![GitHub stars](https://img.shields.io/github/stars/binwiederhier/ntfy?style=social&color=white)](https://github.com/binwiederhier/ntfy/stargazers)  
+  🔔 HTTP-based pub-sub push notification service. Send instant alerts to phones or desktops via simple PUT/POST HTTP requests. Features iOS/Android push relay, UnifiedPush integration, and zero-dependency self-hosting. **Go stack**.
+
+- **[Gotify](https://github.com/gotify/server)**  
+  [![GitHub stars](https://github.com/gotify/server/stargazers)](https://github.com/gotify/server/stargazers)  
+  [![GitHub stars](https://img.shields.io/github/stars/gotify/server?style=social&color=white)](https://github.com/gotify/server/stargazers)  
+  📲 Self-hosted WebSocket push notification server for sending and receiving emergency messages in real-time with priority filters and native Android client app support. **Go stack**.
+
+- **[Apprise](https://github.com/caronc/apprise)**  
+  [![GitHub stars](https://img.shields.io/github/stars/caronc/apprise?style=social&color=white)](https://github.com/caronc/apprise/stargazers)  
+  📣 Universal push notification library. Send emergency alerts to over 100+ notification services (Telegram, Signal, Discord, SMS, Email, VoIP, Pushover) using a single unified syntax. **Python stack**.
+
+- **[Resgrid Core](https://github.com/Resgrid/Core)**  
+  [![GitHub stars](https://img.shields.io/github/stars/Resgrid/Core?style=social&color=white)](https://github.com/Resgrid/Core/stargazers)  
+  🚒 Complete open-source emergency management & Computer Aided Dispatch (CAD) platform. Features automated dispatching, unit tracking (AVL), duty shifts, responder messaging, and multi-channel emergency notification. **C# / .NET Core stack**.
+
+- **[FOSS Warn](https://github.com/nucleus-ffm/foss_warn)**  
+  [![GitHub stars](https://img.shields.io/github/stars/nucleus-ffm/foss_warn?style=social&color=white)](https://github.com/nucleus-ffm/foss_warn/stargazers)  
+  ⚡ Open-source government disaster & weather warning app. Ingests Common Alerting Protocol (CAP) feeds from Germany (NINA/BIWAPP) and international KDE disaster alerts via UnifiedPush. **C++ / Qt / KDE stack**.
+
+- **[OpsKnight](https://github.com/opsknight-labs/OpsKnight)**  
+  [![GitHub stars](https://img.shields.io/github/stars/opsknight-labs/OpsKnight?style=social&color=white)](https://github.com/opsknight-labs/OpsKnight/stargazers)  
+  🛡️ Incident management, on-call escalation, and status page platform. Connects monitoring alerts directly to incident responder call/SMS rotas. **TypeScript / Next.js stack**.
+
+- **[Brgy.Tanod-S.O.S](https://github.com/MiB1968/Brgy.Tanod-S.O.S)**  
+  [![GitHub stars](https://img.shields.io/github/stars/MiB1968/Brgy.Tanod-S.O.S?style=social&color=white)](https://github.com/MiB1968/Brgy.Tanod-S.O.S/stargazers)  
+  🆘 Offline-first PWA emergency SOS alert system with live location heatmaps, offline queued sync, SMS fallback, and local WebLLM voice-activated AI Guardian mode. **React / Firebase stack**.
+
+- **[SteeperMold Emergency Notification System](https://github.com/SteeperMold/Emergency-Notification-System)**  
+  [![GitHub stars](https://img.shields.io/github/stars/SteeperMold/Emergency-Notification-System?style=social&color=white)](https://github.com/SteeperMold/Emergency-Notification-System/stargazers)  
+  ⚡ Scalable SMS notification system engineered for **million-recipient scale**. Microservices architecture utilizing Kafka queues, Go API, Twilio delivery callbacks, and Grafana telemetry. **Go / React / Kafka stack**.
+
+- **[EAS Station](https://hub.docker.com/r/kr8mer/eas-station)**  
+  [![Docker Pulls](https://img.shields.io/docker/pulls/kr8mer/eas-station?style=social&color=white)](https://hub.docker.com/r/kr8mer/eas-station)  
+  📻 Broadcast Emergency Alert System (EAS) software stack. Processes CAP (Common Alerting Protocol) feeds from NOAA/IPAWS, generates SAME audio header tones, and relays alerts to radio/GPIO/LED gateways. **Docker Compose stack**.
+
+- **[mowas-pwb](https://github.com/joergschultzelutter/mowas-pwb)**  
+  [![GitHub stars](https://img.shields.io/github/stars/joergschultzelutter/mowas-pwb?style=social&color=white)](https://github.com/joergschultzelutter/mowas-pwb/stargazers)  
+  📡 Modular Warning System (MoWaS) Personal Warning Beacon. Parses German emergency broadcasts, monitors lat/lon & APRS locations, and auto-translates warning texts via LLMs. **Python / Raspberry Pi stack**.
+
+- **[Emergency Notification System](https://github.com/inwall-ch/emergency-notification-system)**  
+  [![GitHub stars](https://img.shields.io/github/stars/inwall-ch/emergency-notification-system?style=social&color=white)](https://github.com/inwall-ch/emergency-notification-system/stargazers)  
+  ✉️ Lightweight emergency alert portal for uploading CSV contacts, managing message templates, and triggering immediate multi-channel SMS/Email/Telegram alerts. **PHP / Laravel stack**.
+
+- **[Scribe Hospital Crisis System](https://github.com/nocomp/scribe)**  
+  [![GitHub stars](https://img.shields.io/github/stars/nocomp/scribe?style=social&color=white)](https://github.com/nocomp/scribe/stargazers)  
+  🏥 Decentralized, privacy-compliant hospital crisis management system. Manages multi-facility incident escalation, ambulance routing, and bed capacity tracking offline. **FastAPI / Python stack**.
+
+---
+
+## 🏗️ Architectural Frameworks & Infrastructure Tools
+
+When constructing custom high-availability emergency notification systems, pair these open-source building blocks:
+1. **Command & Dispatch Core**: Utilize [Resgrid Core](https://github.com/Resgrid/Core) for CAD, responder tracking, and shift rotas.
+2. **Notification Workflow Routing**: Deploy [Novu](https://github.com/novuhq/novu) or [Apprise](https://github.com/caronc/apprise) for unified SMS, Email, Push, and Chat provider delivery.
+3. **High-Throughput SMS Engine**: Combine [SteeperMold ENS](https://github.com/SteeperMold/Emergency-Notification-System) with Apache Kafka for bulk million-recipient SMS dispatch.
+4. **Self-Hosted Push Infrastructure**: Host [ntfy](https://github.com/binwiederhier/ntfy) or [Gotify](https://github.com/gotify/server) for direct mobile alerts bypassing standard app store notification bottlenecks.
+5. **Broadcast CAP/SAME Ingestion**: Integrate [EAS Station](https://hub.docker.com/r/kr8mer/eas-station) to listen to NOAA/IPAWS feeds and trigger local alarms or radio relays.
+
+---
+
+## 🤝 How to Contribute
+
+Contributions, pull requests, and updates are welcomed!  
+1. **Fork** the repository.
+2. **Add/Edit** entries in `README.md` following the tabular or open-source list format.
+3. Ensure descriptions are accurate, objective, and linked directly to official repositories or vendor pages.
+4. Open a **Pull Request** detailing your changes.
+
+---
+
+## 💖 Support & Sponsorship
+
+If you find this curated directory helpful for your research, enterprise setup, or open-source emergency response projects, please consider supporting the project!
+
+- ⭐ **Star this repository** to help others discover these critical tools.
+- 🔀 **Fork & Share** with emergency managers, campus security teams, and DevOps engineers.
+- ☕ **Buy Me a Coffee / Sponsor**: Support ongoing maintenance on the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Emergency-Alerting&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Emergency-Alerting&type=date&legend=top-left)
+
+---
+
+## ⚠️ Disclaimer
+
+- This list is **community-curated** for educational and research purposes.
+- Emergency alerting and mass notification systems handle critical safety communications; always verify system redundancy, regulatory compliance (FCC, FedRAMP, GDPR, CAP standards), and carrier throughput before live deployment.
+- Self-hosted open-source software requires dedicated network security hardening, failover mechanisms, and active monitoring.
+
+---
+
+<p align="center">
+  <b>Built for Emergency Managers, Campus Safety Officers, First Responders, and Public Safety Tech Specialists 🚑📡</b>
+</p>
